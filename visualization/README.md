@@ -35,6 +35,18 @@ Scripts for plotting raw fluorescence kinetics and extracting kinetic parameters
 **Outputs:** Per-condition PNG kinetics, `statistics_summary.xlsx`, `results.csv` (fitted parameters)
 
 ---
+### `Paretto_front/`
+
+Script for Pareto front analysis of mVenus and mCherry yields from MSG1.1 expression. 
+
+| Script | Description |
+|---|---|  
+| `Paretto_front.py` | Pareto front analysis for dual-reporter (mVenus + mCherry) MSG1.1 experiments. Scatter plot colored by harmonic mean; non-dominated conditions connected by a dashed red line. |
+
+**Input:** Fluorescence data points hardcoded in script  
+**Outputs:** PNG, SVG saved
+
+---
 
 ### `yield_rate/`
 
@@ -44,7 +56,6 @@ Scripts for plotting the relationship between yield and translation rate, and fo
 |---|---|
 | `Rate_vs_Yields.py` | Scatter plot of relative translation rate vs. relative mEYFP yield across experimental rounds. Includes a forced-through-origin linear regression with R² annotation. Color-coded by round. |
 | `REF_Rate_vs_Yield.py` | Rate vs. yield scatter plots for REF conditions specifically, comparing Echo-assembled, manually assembled, and commercial kit reactions across batches and DNA concentrations. |
-| `Paretto_front.py` | Pareto front analysis for dual-reporter (mVenus + mCherry) MSG1.1 experiments. Scatter plot colored by harmonic mean; non-dominated conditions connected by a dashed red line. |
 | `Manual_Yield_vs_Rate_Separate_Bars.py` | Grouped bar charts comparing yield and normalized translation rate for manually assembled ePURE variants vs. REF and commercial kit. Includes Welch's t-test significance brackets. |
 
 **Input:** `results.csv` (from `Fluo_kinetics_script.ipynb`) or custom CSV with `Rel. Yield`, `Translation_Rate`, `Cond.`, `Day` columns  
