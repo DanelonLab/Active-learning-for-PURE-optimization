@@ -58,7 +58,7 @@ Preprocessing utility for deduplicating experimental conditions.
 
 | Script | Description |
 |---|---|
-| `Merging_Condition_Script.py` | Collapses rows with identical feature vectors (same PURE composition) into a single row by averaging `yield` (and optionally `rate`). Required before running MDS, correlation, and ML scripts. |
+| `Merging_Condition_Script.py` | Collapses rows with identical feature vectors (same PURE composition) into a single row by averaging `yield` (and optionally `rate`). Required before running kymographs, MDS, correlation, and ML scripts. |
 
 **Input:** Raw `All_*.csv` (from active learning rounds combined)  
 **Output:** `*_merged.csv` (deduplicated, one row per unique composition)
