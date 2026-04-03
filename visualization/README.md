@@ -28,8 +28,8 @@ Scripts for plotting raw fluorescence kinetics and extracting kinetic parameters
 | Script | Description |
 |---|---|
 | `Fluo_kinetics_script.ipynb` | Processes CLARIOstar plate reader output. Groups wells by condition prefix (e.g., `REF_A`, `REF_B`), computes mean ± SD, fits a 4-parameter Hill sigmoid model, and extracts **yield** (plateau) and **apparent translation rate** (steepest slope at *t* = *K*). Outputs per-condition kinetic plots and a global overlay. |
-| `CPRG_Script_v2.py` | Quantifies β-galactosidase yield from CPRG→CPR absorbance kinetics (575 nm). Extracts the steepest slope per condition using a sliding window, normalizes to REF, and generates bar charts with individual replicate overlays. |
-| `REF_Plot_kinetics_for_comparison.py` | Loads a wide-format Excel kinetics file, auto-detects the time header row, and plots per-group kinetics (REF_ECHO, REF_MAN, COM) for each batch × concentration combination. Useful for comparing assembly methods. |
+| `Absorbance_kinetics(CPRG).py` | Quantifies β-galactosidase yield from CPRG→CPR absorbance kinetics (575 nm). Extracts the steepest slope per condition using a sliding window, normalizes to REF, and generates bar charts with individual replicate overlays. |
+| `REF_kinetics.py` | Loads a wide-format Excel kinetics file, auto-detects the time header row, and plots per-group kinetics (REF_ECHO, REF_MAN, COM) for each batch × concentration combination. Useful for comparing assembly methods. |
 
 **Input:** Excel files exported from CLARIOstar (wide format: rows = wells, columns = time points)  
 **Outputs:** Per-condition PNG kinetics, `statistics_summary.xlsx`, `results.csv` (fitted parameters)
