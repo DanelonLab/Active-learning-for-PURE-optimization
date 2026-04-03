@@ -7,9 +7,9 @@ This repository contains all analysis scripts and active learning notebooks asso
 
 > **Optimization of PURE system composition using automation and active learning**  
 > Yannick Bernard-Lapeyre, Céline Cleij, Andrei Sakai, Marie-José Huguet, Christophe Danelon  
-> *Toulouse Biotechnology Institute (TBI), LAAS–CNRS, TU Delft, Radboud University*
+> *Toulouse Biotechnology Institute (TBI), LAAS–CNRS, TU Delft, Radboud University*  
+> bioRxiv doi: https://doi.org/10.64898/2026.03.23.713685
 
-bioRxiv 2026.03.23.713685; doi: https://doi.org/10.64898/2026.03.23.713685
 ---
 
 ## Overview
@@ -21,8 +21,7 @@ By grouping 69 individual components into 21 functional sets and iterating over 
 
 ### Experimental Parameterization of the PURE System
 
-<!-- INSERT TABLE 1 IMAGE HERE -->
-<!-- Example: ![Table 1](link_to_table1.png) -->
+<img src="images/Table1.png" width="750">
 
 **Table 1 – Functional grouping of PURE components.**  
 69 components are reduced to 21 variables based on biochemical roles. Each group is assigned an Echo liquid class to ensure accurate dispensing. This abstraction enables tractable exploration of the combinatorial space.
@@ -31,8 +30,8 @@ By grouping 69 individual components into 21 functional sets and iterating over 
 
 ### Active Learning–Driven Optimization Workflow
 
-<!-- INSERT FIGURE 1 IMAGE HERE -->
-<!-- Example: ![Figure 1](link_to_figure1.png) -->
+
+<img src="images/Figure1.png" width="500">
 
 **Figure 1 – Active learning workflow.**  
 Closed-loop optimization combining Echo-based assembly, fluorescence readout, and XGBoost-driven Bayesian optimization to iteratively improve PURE compositions.
