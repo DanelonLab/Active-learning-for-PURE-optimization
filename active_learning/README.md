@@ -33,7 +33,7 @@ drive.mount('/content/drive')
 
 ### Workflow (per round)
 
-1. **User Inputs** — Set component concentration grids, stock concentrations, and special conditions (REF, top conditions from previous rounds).
+1. **User Inputs** — Set experimental parameters : number of conditions, reaction volumes, exploration factor, component concentration grids, stock concentrations, and special conditions (REF, top conditions from previous rounds).
 2. **Day 1 / Round 0** — Generate random combinations using `random_combination_generator`.
 3. **Other Days** — After uploading `Results_X.csv`, train XGBoost ensemble and run Bayesian optimization to select the next round's conditions.
 4. **Echo Output** — Convert concentration tables to Echo cherry-picking scripts (`.csv`) and source plate layouts (`.xlsx`).
