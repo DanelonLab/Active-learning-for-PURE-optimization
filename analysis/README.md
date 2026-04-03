@@ -1,6 +1,6 @@
 # Analysis
 
-This folder contains all scripts for downstream data analysis: machine learning model training, dimensionality reduction, correlation analysis, and data preprocessing. The scripts also include visualization of results and produce publication ready graphs.
+This folder contains all scripts for downstream data analysis: machine learning model training, dimensionality reduction, correlation analysis, and data preprocessing. The scripts also include visualization of results and produce publication ready graphs in PNG (300 dpi), SVG, and PDF formats using the shared figure_utils.py scaling utility (see utils/)..
 
 ---
 
