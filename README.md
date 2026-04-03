@@ -31,7 +31,7 @@ By grouping 69 individual components into 21 functional sets and iterating over 
 ### Active Learning–Driven Optimization Workflow
 
 
-<img src="images/Figure1.png" width="650">
+<img src="images/Figure1.png" width="675">
 
 **Figure 1 – Active learning workflow.**  
 Closed-loop optimization combining Echo-based assembly, fluorescence readout, and XGBoost-driven Bayesian optimization to iteratively improve PURE compositions.
