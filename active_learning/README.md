@@ -10,8 +10,8 @@ This folder contains the four Google Colab notebooks used to run the iterative P
 |---|---|---|---|---|
 | `PURE_Exploration_0_1nM_METIS_TBI.ipynb` | *meyfp* | 0.1 nM | 0–2 | First METIS campaign (Batch#1). Initial random exploration + 2 active learning rounds. |
 | `PURE_Exploration_2nM_TBI.ipynb` | *meyfp* | 2 nM | 6–8 | High-DNA campaign (Batch#2). Improved predictability, distinct limiting factors. |
-| `PURE_Exploration_MSG1_1.ipynb` | MSG1.1 (41 kb) | 0.1 nM & 1 nM | 1–8 | Multicistronic synthetic chromosome. Multi-objective optimization using harmonic mean of mVenus + mCherry. |
-| `PURE_Exploration_MSG1_1_C_change.ipynb` | MSG1.1 (41 kb) | 0.1 nM & 1 nM | 6–10 | Continuation of MSG1.1 campaign with **expanded concentration ranges** (rounds 6–8). Updated component grids allow exploration beyond the initial ×0.5–×2 window. |
+| `PURE_Exploration_MSG1_1.ipynb` | MSG1.1 (41 kb) | 0.1 nM & 1 nM | 1–5 | Multicistronic synthetic chromosome. Multi-objective optimization using harmonic mean of mVenus + mCherry. |
+| `PURE_Exploration_MSG1_1_C_change.ipynb` | MSG1.1 (41 kb) | 0.1 nM & 1 nM | 6–8 | Continuation of MSG1.1 campaign with **expanded concentration ranges** (rounds 6–8). Updated component grids allow exploration beyond the initial ×0.5–×2 window. |
 
 ---
 
