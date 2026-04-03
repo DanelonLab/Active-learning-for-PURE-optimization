@@ -1,0 +1,22 @@
+# Core scientific stack
+pandas>=2.2.1
+numpy>=1.26.4
+scipy>=1.16.0
+
+# Visualization
+matplotlib>=3.10.6
+seaborn>=0.13.2
+
+# Machine learning
+scikit-learn>=1.4.2
+xgboost>=2.1.2
+shap>=0.46.0
+joblib
+
+# Excel / file I/O
+openpyxl
+xlsxwriter
+
+# Notebook support (for Fluo_kinetics_script.ipynb)
+jupyter
+ipykernel
