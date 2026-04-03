@@ -21,7 +21,7 @@ By grouping 69 individual components into 21 functional sets and iterating over 
 
 ### Experimental Parameterization of the PURE System
 
-<img src="images/Table1.png" width="600">
+<img src="images/Table1.png" width="500">
 
 **Table 1 – Functional grouping of PURE components.**  
 69 components are reduced to 21 variables based on biochemical roles. Each group is assigned an Echo liquid class to ensure accurate dispensing. This abstraction enables tractable exploration of the combinatorial space.
@@ -31,7 +31,7 @@ By grouping 69 individual components into 21 functional sets and iterating over 
 ### Active Learning–Driven Optimization Workflow
 
 
-<img src="images/Figure1.png" width="600">
+<img src="images/Figure1.png" width="700">
 
 **Figure 1 – Active learning workflow.**  
 Closed-loop optimization combining Echo-based assembly, fluorescence readout, and XGBoost-driven Bayesian optimization to iteratively improve PURE compositions.
@@ -150,7 +150,7 @@ pip install -r requirements.txt
 
 ## Data
 
-Raw fluorescence kinetics, PURE component concentration files, and Results CSVs are not included in this repository due to size constraints. Please contact the corresponding author for access: [danelon@insa-toulouse.fr](mailto:danelon@insa-toulouse.fr)
+Raw fluorescence kinetics, PURE component concentration files, and Results CSVs are not all included in this repository due to size constraints. A selection of example files used for each script were uploaded and placed in associated example_data folders. Please contact the corresponding author for access: [danelon@insa-toulouse.fr](mailto:danelon@insa-toulouse.fr)
 
 The expected input format for most analysis scripts is a CSV with:
 - A `Condition` column (string label; must include a `REF` row)
@@ -165,7 +165,7 @@ This work builds on **METIS** ([Pandi et al., 2022, *Nat Commun*](https://doi.or
 - **XGBoost regression** for yield prediction
 - **Bayesian optimization** (Upper Confidence Bound) for candidate selection
 
-The notebooks in `active_learning/` are modified versions of the METIS notebook adapted for PURE system components, Echo liquid handling.
+The notebooks in `active_learning/` are modified versions of the METIS notebook adapted for PURE system components, Echo liquid handling. The original implementation is available at https://github.com/amirpandi/METIS.
 
 ---
 
