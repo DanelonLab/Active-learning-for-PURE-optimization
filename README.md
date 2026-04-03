@@ -21,7 +21,7 @@ By grouping 69 individual components into 21 functional sets and iterating over 
 
 ### Experimental Parameterization of the PURE System
 
-<img src="images/Table1.png" width="750">
+<img src="images/Table1.png" width="500">
 
 **Table 1 – Functional grouping of PURE components.**  
 69 components are reduced to 21 variables based on biochemical roles. Each group is assigned an Echo liquid class to ensure accurate dispensing. This abstraction enables tractable exploration of the combinatorial space.
