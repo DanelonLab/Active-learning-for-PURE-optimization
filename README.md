@@ -44,7 +44,7 @@ Closed-loop optimization combining Echo-based assembly, fluorescence readout, an
 ```
 PURE_optimization_github/
 │
-├── active_learning/              # METIS-based optimization notebooks (Google Colab)
+├── active_learning/              # METIS-based Bayesian optimization notebooks (Google Colab)
 │   ├── PURE_Exploration_0_1nM_METIS_TBI.ipynb
 │   ├── PURE_Exploration_2nM_TBI.ipynb
 │   ├── PURE_Exploration_MSG1_1.ipynb
@@ -52,24 +52,22 @@ PURE_optimization_github/
 │   └── README.md
 │
 ├── analysis/                     # Downstream data analysis
-│   ├── machine_learning/         # XGBoost nested CV pipeline + feature importance
-│   ├── dimensionality_reduction/ # MDS analysis scripts
+│   ├── dimensionality_reduction/ # MDS scripts (k-means, cross-batch, cross-concentration)
+│   ├── machine_learning/         # XGBoost nested CV pipeline + SHAP feature importance
 │   ├── correlations/             # Spearman correlation analysis
-│   ├── data_merging/             # Condition deduplication and merging
+│   ├── data_merging/             # Condition deduplication and results merging
 │   └── README.md
 │
 ├── visualization/                # Figure generation scripts
+│   ├── kinetics/                 # Fluorescence & absorbance kinetics pipelines
 │   ├── kymographs/               # Composition kymographs
-│   ├── kinetics/                 # Fluorescence and absorbance kinetics
-│   ├── yield_rate/               # Yield vs rate, Pareto front, bar charts
+│   ├── yield_rate/               # Yield vs rate scatter, Pareto front, bar charts
 │   ├── heatmaps/                 # Mass spectrometry heatmaps
 │   └── README.md
 │
-├── utils/                        # Shared utilities
-│   ├── figure_utils.py           # Publication-quality figure scaling
-│   └── README.md
-│
-└── README.md                     # This file
+└── utils/                        # Shared utilities
+    ├── figure_utils.py           # Publication-quality figure scaling
+    └── README.md
 ```
 
 ---
