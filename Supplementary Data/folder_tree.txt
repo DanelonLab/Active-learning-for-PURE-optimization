@@ -1,0 +1,392 @@
+Data
+├── meYFP_optimization
+│   ├── Figure_2
+│   │   ├── Round_0
+│   │   │   ├── 20240308_Results_PURE_Exploration.xlsx
+│   │   │   ├── Concentrations_0.csv
+│   │   │   ├── Kinetic_parameters.csv
+│   │   │   ├── Results_0.csv
+│   │   │   ├── Round_0_fluorescence_kinetics.xlsx
+│   │   │   ├── Round_0_meYFP_concentration.xlsx
+│   │   │   ├── statistics_summary.xlsx
+│   │   │   ├── Volumes_0.csv
+│   │   │   
+│   │   ├── Round_1
+│   │   │   ├── 20240320_Results_PURE_Exploration_Round_1.xlsx
+│   │   │   ├── Concentrations_1.csv
+│   │   │   ├── EchoCherryPicking.xlsx
+│   │   │   ├── Results_1.csv
+│   │   │   ├── Round_1_fluorescence_kinetics.xlsx
+│   │   │   ├── Round_1_meYFP_concentration.xlsx
+│   │   │   └── Volumes_1.csv
+│   │   ├── Round_2
+│   │   │   ├── Beta-Gal
+│   │   │   │   ├── relative_slope_scores.xlsx
+│   │   │   │   └── Round_2_CPRG_kinetics.xlsx
+│   │   │   ├── Concentrations_2.csv
+│   │   │   ├── relative_slope_scores.xlsx
+│   │   │   ├── Results_2.csv
+│   │   │   ├── Results_PURE_Exploration_Round_2.xlsx
+│   │   │   ├── Round_2_absorbance_kinetics.xlsx
+│   │   │   ├── Round_2_fluorescence_kinetics.xlsx
+│   │   │   ├── Round_2_meYFP_concentration.xlsx
+│   │   │   └── Volumes_2.csv
+│   │   ├── All_Batch#1_0.1nM_kinetic_parameters.csv
+│   │   └── All_Results_Batch#1_0.1nM_yield+rate_merged.csv
+│   ├── Figure_3
+│   │   ├── Round_6
+│   │   │   ├── 20241113_Echo_Cherry_Picking.csv
+│   │   │   ├── 20241114_Pretreated_Results_meYFP_concentration.xlsx
+│   │   │   ├── 20_Most_Informative_Combinations_Rank1.csv
+│   │   │   ├── Concentrations_6_Custom.csv
+│   │   │   ├── Results_6.csv
+│   │   │   ├── Round_6_fluorescence_kinetics.xlsx
+│   │   │   ├── Round_6_meYFP_concentration.xlsx
+│   │   │   ├── Round_6_results.csv
+│   │   │   ├── Round_6_statistics_summary.xlsx
+│   │   │   └── Volumes_6.csv
+│   │   ├── Round_7
+│   │   │   ├── 20241203_Echo_Cherry_Picking.csv
+│   │   │   ├── Concentrations_7.csv
+│   │   │   ├── Results_7.csv
+│   │   │   ├── Round_7_fluorescence_kinetics.xlsx
+│   │   │   ├── Round_7_kinetic_parameters.csv
+│   │   │   ├── Round_7_meYFP_concentration.xlsx
+│   │   │   ├── Round_7_statistics_summary.xlsx
+│   │   │   └── Volumes_7.csv
+│   │   ├── Round_8
+│   │   │   ├── 20250108Echo_Cherry_Picking.csv
+│   │   │   ├── Concentrations_8.csv
+│   │   │   ├── Results_8.csv
+│   │   │   ├── Round_8_fluorescence_kinetics.xlsx
+│   │   │   ├── Round_8_kinetic_parameters.csv
+│   │   │   ├── Round_8_meYFP_concentration.xlsx
+│   │   │   ├── Round_8_statistics_summary.xlsx
+│   │   │   └── Volumes_8.csv
+│   │   ├── All_Batch#2_2nM_kinetic_parameters.csv
+│   │   └── All_Results_2nM_yield+rate_merged.csv
+│   ├── Figure_4
+│   │   ├── ePURE1-2
+│   │   │   ├── Manual_Assembly_1
+│   │   │   │   ├── ePURE1_2_(Top Round_1_2)_fluorescence_kinetics_1.xlsx
+│   │   │   │   ├── Kinetic_parameters.csv
+│   │   │   │   └── statistics_summary.xlsx
+│   │   │   ├── Manual_Assembly_2
+│   │   │   │   ├── ePURE1_2_fluorescence_kinetics_2.xlsx
+│   │   │   │   ├── Kinetic_parameters.csv
+│   │   │   │   └── statistics_summary.xlsx
+│   │   │   └── Manual_Assembly_3
+│   │   │       ├── ePURE1_2_fluorescence_kinetics_3.xlsx
+│   │   │       ├── results.csv
+│   │   │       └── statistics_summary.xlsx
+│   │   ├── ePURE3
+│   │   │   ├── Manual_Assembly_1
+│   │   │   │   ├── ePURE3(Top_Round_5)_fluorescence_0.1nM.xlsx
+│   │   │   │   └── ePURE3(Top_Round_5)_fluorescence_2nM.xlsx
+│   │   │   ├── Manual_Assembly_2
+│   │   │   │   ├── ePURE3(Top_Round_5)_fluorescence_0.1nM.xlsx
+│   │   │   │   └── ePURE3(Top_Round_5)_fluorescence_2nM.xlsx
+│   │   │   └── Manual_Assembly_3
+│   │   │       ├── ePURE3(Top_Round_5)_fluorescence_0.1nM.xlsx
+│   │   │       └── ePURE3(Top_Round_5)_fluorescence_2nM.xlsx
+│   │   ├── ePURE4
+│   │   │   ├── Manual_Assembly_1
+│   │   │   │   ├── ePURE4(Top_Round_8)_fluorescence_0.1nM.xlsx
+│   │   │   │   └── ePURE4(Top_Round_8)_fluorescence_2nM.xlsx
+│   │   │   ├── Manual_Assembly_2
+│   │   │   │   ├── ePURE4(Top_Round_8)_fluorescence_0.1nM.xlsx
+│   │   │   │   └── ePURE4(Top_Round_8)_fluorescence_2nM.xlsx
+│   │   │   └── Manual_Assembly_3
+│   │   │       ├── ePURE4(Top_Round_8)_fluorescence_0.1nM.xlsx
+│   │   │       └── ePURE4(Top_Round_8)_fluorescence_2nM.xlsx
+│   │   ├── ePURE.csv
+│   │   ├── resultsAll.csv
+│   │   └── t_test_results.csv
+│   ├── Figure_S1
+│   │   ├── Kinetic_Parameters.xlsx
+│   │   ├── Kinetic_Parameters_Prot_Conc.xlsx
+│   │   ├── REF_Comparison_kinetics.xlsx
+│   │   └── REF_Comparison_meYFP_concentration.xlsx
+│   ├── Figure_S2
+│   │   ├── YFP_Quantif_dilutions_fluo.xlsx
+│   │   ├── YFP_Quantif_kinetics_abs.xlsx
+│   │   └── YFP_Quantif_kinetics_fluo.xlsx
+│   └── Figure_S4
+│       ├── Round 3
+│       │   ├── Concentrations_3.csv
+│       │   ├── Kinetic_parameters.csv
+│       │   ├── Results_3.csv
+│       │   ├── Round_3_Echo_Cherry_Picking.csv
+│       │   ├── Round_3_fluorescence_kinetics.xlsx
+│       │   ├── Round_3_meYFP_concentration.xlsx
+│       │   ├── Round_3_Results_PURE_Exploration.xlsx
+│       │   ├── statistics_summary.xlsx
+│       │   └── Volumes_3.csv
+│       ├── Round 3 bis
+│       │   ├── Results_3bis.csv
+│       │   ├── Round_3_bis_fluorescence_kinetics.xlsx
+│       │   ├── Round_3_bis_Kinetic_parameters.csv
+│       │   ├── Round_3_bis_meYFP_concentration.xlsx
+│       │   └── Round_3_bis_statistics_summary.xlsx
+│       ├── Round 4
+│       │   ├── Concentrations_4.csv
+│       │   ├── Kinetic_parameters.csv
+│       │   ├── Results_4.csv
+│       │   ├── Round_4_EchoCherryPicking.csv
+│       │   ├── Round_4_fluorescence_kinetics.xlsx
+│       │   ├── Round_4_meYFP_concentration.xlsx
+│       │   ├── statistics_summary.xlsx
+│       │   └── Volumes_4.csv
+│       ├── Round 5
+│       │   ├── 20_Most_Informative_Combinations_Rank1_bis.csv
+│       │   ├── Concentrations_5.csv
+│       │   ├── Results_5.csv
+│       │   ├── Round_5_Echo_Cherry_Picking.csv
+│       │   ├── Round_5_fluorescence_kinetics.xlsx
+│       │   ├── Round_5_Kinetic_parameters.csv
+│       │   ├── Round_5_meYFP_concentration.xlsx
+│       │   ├── Round_5_statistics_summary.xlsx
+│       │   └── Volumes_5.csv
+│       ├── All_Batch#2_0.1nM_kinetic_parameters.csv
+│       └── All_Results_Batch#2_0.1nM_yield+rate_merged.csv
+├── MSG1.1_optimization
+│   ├── Figure_6
+│   │   ├── Round_1
+│   │   │   ├── 0.1 nM
+│   │   │   │   ├── mCherry
+│   │   │   │   │   ├── Round_1_0.1nM__mCherry_concentration.xlsx
+│   │   │   │   │   └── Round_1_0.1nM_mCherry_kinetics.xlsx
+│   │   │   │   ├── mVenus
+│   │   │   │   │   ├── Round_1_0.1nM_mVenus_concentration.xlsx
+│   │   │   │   │   ├── Round_1_0.1nM_mVenus_kinetic_parameters.csv
+│   │   │   │   │   ├── Round_1_0.1nM_mVenus_kinetics_0.1nM.xlsx
+│   │   │   │   │   └── Round_1_0.1nM_mVenus_statistics_summary.xlsx
+│   │   │   │   ├── Concentrations_1_0.1nM.csv
+│   │   │   │   ├── Results_1_0.1nM.csv
+│   │   │   │   └── Volumes_1_0.1nM.csv
+│   │   │   ├── 1 nM
+│   │   │   │   ├── mCherry
+│   │   │   │   │   ├── Round_1_1nM__mCherry_concentration.xlsx
+│   │   │   │   │   └── Round_1_1nM_mCherry_kinetics.xlsx
+│   │   │   │   ├── mVenus
+│   │   │   │   │   ├── Round_1_1nM_mVenus_concentration.xlsx
+│   │   │   │   │   └── Round_1_1nM_mVenus_kinetics.xlsx
+│   │   │   │   ├── Concentrations_1_1nM.csv
+│   │   │   │   ├── Results_1_1nM.csv
+│   │   │   │   └── Volumes_1_1nM.csv
+│   │   │   ├── Concentrations_1_all.csv
+│   │   │   ├── Relative_Yields_Comparison.xlsx
+│   │   │   ├── Results_1_0.1nM.csv
+│   │   │   ├── Results_1_1nM.csv
+│   │   │   ├── Round_1_Echo_Cherry_Picking.csv
+│   │   │   ├── Volumes_1_0.1nM.csv
+│   │   │   └── Volumes_1_1nM.csv
+│   │   ├── Round_2
+│   │   │   ├── 0.1 nM
+│   │   │   │   ├── mCherry
+│   │   │   │   │   ├── Round_2_0.1nM_mCherry_concentration.xlsx
+│   │   │   │   │   └── Round_2_0.1nM_mCherry_kinetics.xlsx
+│   │   │   │   └── mVenus
+│   │   │   │       ├── Round_2_0.1nM_mVenus_concentration.xlsx
+│   │   │   │       └── Round_2_0.1nM_mVenus_kinetics.xlsx
+│   │   │   ├── 1 nM
+│   │   │   │   ├── mCherry
+│   │   │   │   │   ├── Round_2_1nM_mCherry_concentration.xlsx
+│   │   │   │   │   └── Round_2_1nM_mCherry_kinetics.xlsx
+│   │   │   │   └── mVenus
+│   │   │   │       ├── Round_2_1nM_mVenus_concentration.xlsx
+│   │   │   │       └── Round_2_1nM_mVenus_kinetics.xlsx
+│   │   │   ├── Concentrations_2_0.1nM.csv
+│   │   │   ├── Concentrations_2_1nM.csv
+│   │   │   ├── Concentrations_2_all.csv
+│   │   │   ├── Results_2_0.1nM.csv
+│   │   │   ├── Results_2_1nM.csv
+│   │   │   ├── Round_2_Echo_Cherry_Picking.csv
+│   │   │   ├── Round_2_Relative_Yields_Comparison.xlsx
+│   │   │   └── Volumes_2.csv
+│   │   ├── Round_3
+│   │   │   ├── 0.1 nM
+│   │   │   │   ├── mCherry
+│   │   │   │   │   ├── Round_3_0.1nM_mCherry_concentration.xlsx
+│   │   │   │   │   └── Round_3_0.1nM_mCherry_kinetics.xlsx
+│   │   │   │   └── mVenus
+│   │   │   │       ├── Round_3_0.1nM_mVenus_concentration.xlsx
+│   │   │   │       └── Round_3_0.1nM_mVenus_kinetics.xlsx
+│   │   │   ├── 1 nM
+│   │   │   │   ├── mCherry
+│   │   │   │   │   ├── Round_3_1nM_mCherry.xlsx
+│   │   │   │   │   └── Round_3_1nM_mCherry_concentration.xlsx
+│   │   │   │   └── mVenus
+│   │   │   │       ├── Round_3_1nM_mVenus_concentration.xlsx
+│   │   │   │       └── Round_3_1nM_mVenus_kinetics.xlsx
+│   │   │   ├── Concentrations_3_0.1nM.csv
+│   │   │   ├── Concentrations_3_1nM.csv
+│   │   │   ├── Concentrations_3_all.csv
+│   │   │   ├── Destination_Plate_3.xlsx
+│   │   │   ├── Results_3_0.1nM.csv
+│   │   │   ├── Results_3_1nM.csv
+│   │   │   ├── Round_3_Echo_Cherry_Picking.csv
+│   │   │   ├── Round_3_Relative_Yields_Comparison.xlsx
+│   │   │   └── Volumes_3.csv
+│   │   ├── Round_4
+│   │   │   ├── 0.1 nM
+│   │   │   │   ├── mCherry
+│   │   │   │   │   ├── Round_4_0.1nM_mCherry_concentration.xlsx
+│   │   │   │   │   └── Round_4_0.1nM_mCherry_kinetics.xlsx
+│   │   │   │   └── mVenus
+│   │   │   │       ├── Round_4_0.1nM_mVenus_concentration.xlsx
+│   │   │   │       └── Round_4_0.1nM_mVenus_kinetics.xlsx
+│   │   │   ├── 1 nM
+│   │   │   │   ├── mCherry
+│   │   │   │   │   ├── Round_4_1nM_mCherry_concentration.xlsx
+│   │   │   │   │   └── Round_4_1nM_mCherry_kinetics.xlsx
+│   │   │   │   └── mVenus
+│   │   │   │       ├── Round_4_1nM_mVenus_concentration.xlsx
+│   │   │   │       └── Round_4_1nM_mVenus_kinetics.xlsx
+│   │   │   ├── Concentrations_4_0.1nM.csv
+│   │   │   ├── Concentrations_4_1nM.csv
+│   │   │   ├── Concentrations_4_all.csv
+│   │   │   ├── Results_4_0.1nM.csv
+│   │   │   ├── Results_4_1nM.csv
+│   │   │   ├── Round_4_Echo_Cherry_Picking.csv
+│   │   │   ├── Round_4_Relative_Yields_Comparison.xlsx
+│   │   │   └── Volumes_4.csv
+│   │   ├── Round_5
+│   │   │   ├── 0.1 nM
+│   │   │   │   ├── mCherry
+│   │   │   │   │   ├── Round_5_0.1nM_mCherry_concentration.xlsx
+│   │   │   │   │   └── Round_5_0.1nM_mCherry_kinetics.xlsx
+│   │   │   │   └── mVenus
+│   │   │   │       ├── Round_5_0.1nM_mVenus_concentration.xlsx
+│   │   │   │       └── Round_5_0.1nM_mVenus_kinetics.xlsx
+│   │   │   ├── 1 nM
+│   │   │   │   ├── mCherry
+│   │   │   │   │   ├── Round_5_1nM_mCherry_concentration.xlsx
+│   │   │   │   │   └── Round_5_1nM_mCherry_kinetics.xlsx
+│   │   │   │   └── mVenus
+│   │   │   │       ├── Round_5_1nM_mVenus_concentration.xlsx
+│   │   │   │       └── Round_5_1nM_mVenus_kinetics.xlsx
+│   │   │   ├── Concentrations_5.csv
+│   │   │   ├── Concentrations_5_0.1nM.csv
+│   │   │   ├── Concentrations_5_1nM.csv
+│   │   │   ├── Results_5_0.1nM.csv
+│   │   │   ├── Results_5_1nM.csv
+│   │   │   ├── Round_5_Echo_Cherry_Picking.csv
+│   │   │   ├── Round_5_Relative_Yields_Comparison_Corrected.xlsx
+│   │   │   ├── Volumes_5.csv
+│   │   │   ├── Volumes_5_0.1nM.csv
+│   │   │   └── Volumes_5_1nM.csv
+│   │   ├── Round_6
+│   │   │   ├── 0.1 nM
+│   │   │   │   ├── mCherry
+│   │   │   │   │   ├── Round_6_0.1nM_mCherry_concentration.xlsx
+│   │   │   │   │   └── Round_6_0.1nM_mCherry_kinetics.xlsx
+│   │   │   │   ├── mVenus
+│   │   │   │   │   ├── Round_6_0.1nM_mVenus_concentration.xlsx
+│   │   │   │   │   └── Round_6_0.1nM_mVenus_kinetics.xlsx
+│   │   │   │   ├── Concentrations_6.csv
+│   │   │   │   └── Volumes_6.csv
+│   │   │   ├── 1 nM
+│   │   │   │   ├── mCherry
+│   │   │   │   │   ├── Round_6_1nM_mCherry_concentration.xlsx
+│   │   │   │   │   └── Round_6_1nM_mCherry_kinetics.xlsx
+│   │   │   │   ├── mVenus
+│   │   │   │   │   ├── Round_6_1nM_mVenus_concentration.xlsx
+│   │   │   │   │   └── Round_6_1nM_mVenus_kinetics.xlsx
+│   │   │   │   ├── Concentrations_6.csv
+│   │   │   │   └── Volumes_6.csv
+│   │   │   ├── Results_6_0.1nM.csv
+│   │   │   ├── Results_6_1nM.csv
+│   │   │   ├── Round_6_Echo_Cherry_Picking.csv
+│   │   │   └── Round_6_Relative_Yields_Comparison.xlsx
+│   │   ├── Round_7
+│   │   │   ├── 0.1 nM
+│   │   │   │   ├── mCherry
+│   │   │   │   │   ├── Round_7_0.1nM_mCherry_concentration.xlsx
+│   │   │   │   │   └── Round_7_0.1nM_mCherry_kinetics.xlsx
+│   │   │   │   ├── mVenus
+│   │   │   │   │   ├── Round_7_0.1nM_mVenus_concentration.xlsx
+│   │   │   │   │   └── Round_7_0.1nM_mVenus_kinetics.xlsx
+│   │   │   │   ├── Concentrations_7.csv
+│   │   │   │   └── Volumes_7.csv
+│   │   │   ├── 1 nM
+│   │   │   │   ├── mCherry
+│   │   │   │   │   ├── Round_7_1nM_mCherry_concentration.xlsx
+│   │   │   │   │   └── Round_7_1nM_mCherry_kinetics.xlsx
+│   │   │   │   ├── mVenus
+│   │   │   │   │   ├── Round_7_1nM_mVenus_concentration.xlsx
+│   │   │   │   │   └── Round_7_1nM_mVenus_kinetics.xlsx
+│   │   │   │   ├── Concentrations_7.csv
+│   │   │   │   └── Volumes_7.csv
+│   │   │   ├── Results_7_0.1nM.csv
+│   │   │   ├── Results_7_1nM.csv
+│   │   │   ├── Round_7_Echo_Cherry_Picking.csv
+│   │   │   └── Round_7_Relative_Yields_Comparison.xlsx
+│   │   ├── Round_8
+│   │   │   ├── 0.1 nM
+│   │   │   │   ├── mCherry
+│   │   │   │   │   ├── Round_8_0.1nM_mCherry_concentration.xlsx
+│   │   │   │   │   └── Round_8_0.1nM_mCherry_kinetics.xlsx
+│   │   │   │   ├── mVenus
+│   │   │   │   │   ├── Round_8_0.1nM_mVenus_concentration.xlsx
+│   │   │   │   │   └── Round_8_0.1nM_mVenus_kinetics.xlsx
+│   │   │   │   ├── Concentrations_8.csv
+│   │   │   │   └── Volumes_8.csv
+│   │   │   ├── 1 nM
+│   │   │   │   ├── mCherry
+│   │   │   │   │   ├── Round_8_1nM_mCherry_concentration.xlsx
+│   │   │   │   │   └── Round_8_1nM_mCherry_kinetics.xlsx
+│   │   │   │   ├── mVenus
+│   │   │   │   │   ├── Round_8_1nM_mVenus_concentration.xlsx
+│   │   │   │   │   └── Round_8_1nM_mVenus_kinetics.xlsx
+│   │   │   │   ├── Concentrations_8.csv
+│   │   │   │   └── Volumes_8.csv
+│   │   │   ├── Results_8_0.1nM.csv
+│   │   │   ├── Results_8_1nM.csv
+│   │   │   ├── Round_8_Echo_Cherry_Picking.csv
+│   │   │   └── Round_8_Relative_Yields_Comparison.xlsx
+│   │   ├── Round_9
+│   │   │   ├── 0.1 nM
+│   │   │   │   ├── mCherry
+│   │   │   │   │   ├── Round_9_0.1nM_mCherry_concentration.xlsx
+│   │   │   │   │   └── Round_9_0.1nM_mCherry_kinetics.xlsx
+│   │   │   │   ├── mVenus
+│   │   │   │   │   ├── Round_9_0.1nM__mVenus_concentration.xlsx
+│   │   │   │   │   └── Round_9_0.1nM_mVenus_kinetics.xlsx
+│   │   │   │   ├── Concentrations_9.csv
+│   │   │   │   └── Volumes_9.csv
+│   │   │   ├── 1 nM
+│   │   │   │   ├── mCherry
+│   │   │   │   │   ├── Round_9_1nM_mCherry_concentration.xlsx
+│   │   │   │   │   └── Round_9_1nM_mCherry_kinetics.xlsx
+│   │   │   │   ├── mVenus
+│   │   │   │   │   ├── Round_9_1nM_mVenus_concentration.xlsx
+│   │   │   │   │   └── Round_9_1nM_mVenus_kinetics.xlsx
+│   │   │   │   ├── Concentrations_9.csv
+│   │   │   │   └── Volumes_9.csv
+│   │   │   ├── Destination_Plate_9.xlsx
+│   │   │   ├── Results_9_0.1nM.csv
+│   │   │   ├── Results_9_1nM.csv
+│   │   │   ├── Round_9_Echo_Cherry_Picking.csv
+│   │   │   └── Round_9_Relative_Yields_Comparison.xlsx
+│   │   ├── All_Results_MSG1_0.1nM.csv
+│   │   └── All_Results_MSG1_1nM.csv
+│   ├── Figure_7
+│   │   ├── All_Results_MSG1_0.1nM.csv
+│   │   └── All_Results_MSG1_1nM.csv
+│   ├── Figure_8
+│   │   ├── MS_0.1nM.csv
+│   │   ├── MS_1nM.csv
+│   │   ├── MS_Round_3_Raw.xlsx
+│   │   ├── MS_Round_7_Raw.xlsx
+│   │   └── MS_Round_9_Raw.xlsx
+│   └── Figure_S2
+│       ├── mCherry
+│       │   ├── mCherry_Quantif_dilutions_fluo.xlsx
+│       │   ├── mCherry_Quantif_endpoint_abs.xlsx
+│       │   └── mCherry_Quantif_endpoint_fluo.xlsx
+│       └── mVenus
+│           ├── mVenus_Quantif_dilutions.xlsx
+│           ├── mVenus_Quantif_endpoint_abs.xlsx
+│           └── mVenus_Quantif_no_dilutions.xlsx
+└── folder_tree.txt
