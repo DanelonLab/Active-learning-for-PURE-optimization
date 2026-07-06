@@ -111,7 +111,7 @@ Data
 │   │   ├── YFP_Quantif_dilutions_fluo.xlsx
 │   │   ├── YFP_Quantif_kinetics_abs.xlsx
 │   │   └── YFP_Quantif_kinetics_fluo.xlsx
-│   └── Figure_S4
+│   └── Figure_S5
 │       ├── Round 3
 │       │   ├── Concentrations_3.csv
 │       │   ├── Kinetic_parameters.csv
