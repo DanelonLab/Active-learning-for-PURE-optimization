@@ -1,6 +1,6 @@
 # meYFP optimization — single-gene reporter campaign
 
-Covers Figures 1–4, S1, S2, S4. All rounds use the dual-reporter assay (100 pM meyfp + 10 pM lacZ DNA, except where noted otherwise) assembled with the Echo acoustic dispenser (Fig. 2–3, S4) or manually (Fig. 4).
+Covers Figures 1–4, S1, S11, S4. All rounds assembled with the Echo acoustic dispenser (Fig. 2–3, S4) or manually (Fig. 4).
 
 ## Round → batch/DNA/figure map
 
@@ -38,4 +38,4 @@ Each has up to three `Manual_Assembly_N/` replicate-day folders. The top-level `
 ## Other figures
 
 - `Figure_S1/` — Echo- vs. manually-assembled REF vs. commercial PURE*frex* 2.0 (COM) kit, both batches, both DNA concentrations.
-- `Figure_S2/` — meYFP fluorescence-to-concentration calibration curve (dilution series of PURE-expressed meYFP).
+- `Figure_S11/` — meYFP fluorescence-to-concentration calibration curve (dilution series of PURE-expressed meYFP).
