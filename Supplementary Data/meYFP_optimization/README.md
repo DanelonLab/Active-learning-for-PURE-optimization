@@ -1,6 +1,6 @@
 # meYFP optimization — single-gene reporter campaign
 
-Covers Figures 1–4, S1–S7, S11. All rounds use the dual-reporter assay (100 pM meyfp + 10 pM lacZ DNA, except where noted otherwise) assembled with the Echo acoustic dispenser (Fig. 2–3, S4) or manually (Fig. 4).
+Covers Figures 1–4, S1–S7, S11. All rounds assembled with the Echo acoustic dispenser (Fig. 2–3, S4) or manually (Fig. 4).
 
 ## Round → batch/DNA/figure map
 
