@@ -18,7 +18,7 @@ Each `Round_X/` folder contains:
 - `Kinetic_parameters.csv` / `statistics_summary.xlsx` — fitted yield/rate and replicate statistics
 - `*_Echo_Cherry_Picking.csv` (where present) — most-informative prior conditions re-tested this round
 
-Round_2 additionally has a `Beta-Gal/` subfolder with the lacZ/β-galactosidase CPRG-conversion data behind Fig. 2E (see top-level README, known issue #3, regarding whether this should also exist for rounds 0–1).
+Round_2 additionally has a `Beta-Gal/` subfolder with the lacZ/β-galactosidase CPRG-conversion data behind Fig. 2E.
 
 Per-round files for each campaign are concatenated into a single merged dataset used for the ML/kymograph/MDS panels:
 - Fig. 2 → `Figure_2/All_Batch#1_0.1nM_kinetic_parameters.csv`, `Figure_2/All_Results_Batch#1_0.1nM_yield+rate_merged.csv`
