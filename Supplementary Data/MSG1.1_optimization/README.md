@@ -5,7 +5,7 @@ Covers Figures 5–8 and the second instance of Fig. S11. MSG1.1 is a 41-kb synt
 ## Folder layout (per round)
 
 Each `Round_X/` splits into `0.1 nM/` and `1 nM/`, each containing:
-- `mCherry/` and `mVenus/` subfolders — `*_kinetics.xlsx` (raw fluorescence time-course) and `*_concentration.xlsx` (converted to µg/mL via the Fig. S11 calibration). These concentration files were generated before a parsing fix and have an empty "Time of Max (h)" column; all concentration values are identical to those produced by the current scripts.
+- `mCherry/` and `mVenus/` subfolders — `*_kinetics.xlsx` (raw fluorescence time-course) and `*_concentration.xlsx` (converted to µg/mL via the Fig. S11 calibration).
 - `Concentrations_X*.csv`, `Volumes_X*.csv` — METIS conditions / Echo transfer volumes for that DNA concentration
 - `Results_X*.csv` — conditions + measured harmonic-mean relative yield
 - `*_Echo_Cherry_Picking.csv`, `*_Relative_Yields_Comparison.xlsx` — round-level summaries
