@@ -183,7 +183,7 @@ If you use this code, please cite:
   title   = {Exploration of PURE compositions using automation and active learning reveals context-dependent performance},
   author  = {Bernard-Lapeyre, Yannick and Cleij, C{\'e}line and Sakai, Andrei 
              and Huguet, Marie-Jos{\'e} and Danelon, Christophe},
-  journal = {[Journal]},
+  journal = {ACS Synthetic Biology},
   year    = {2026},
 }
 ```
