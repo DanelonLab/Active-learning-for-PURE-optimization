@@ -27,7 +27,7 @@ Multidimensional Scaling (MDS) analysis for visualizing compositional similarity
 | Script | Description |
 |---|---|
 | `MDS_k-means.py` | MDS + k-means clustering (k=3) on a single dataset. Colors conditions by yield tier; draws convex hulls around clusters. |
-| `mds_shared_top10_0.1nM.py` | Cross-batch MDS for the top-10 conditions from two 0.1 nM batches. Highlights formulations present in both batches ("Shared"). |
+| `mds_shared_top10_0_1nM.py` | Cross-batch MDS for the top-10 conditions from two 0.1 nM batches. Highlights formulations present in both batches ("Shared"). |
 | `MDS_Top10_100pM_2nM_all.py` | Three-way MDS comparing top-10 conditions across three datasets (0.1 nM Batch#1, 0.1 nM Batch#2, 2 nM Batch#2). Four overlap categories detected. |
 | `MDS_SynChro.py` | Cross-concentration MDS for MSG1.1 (SynChro): top-10 from 0.1 nM vs. 1 nM. |
 

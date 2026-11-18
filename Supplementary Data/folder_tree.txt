@@ -7,7 +7,7 @@ Supplementary Data
 │   │   │   ├── Kinetic_parameters.csv
 │   │   │   ├── Results_0.csv
 │   │   │   ├── Round_0_fluorescence_kinetics.xlsx
-│   │   │   ├── Round_0_meYFP_concentration.xlsx
+│   │   │   ├── Round_0_mEYFP_concentration.xlsx
 │   │   │   ├── statistics_summary.xlsx
 │   │   │   └── Volumes_0.csv
 │   │   ├── Round_1
@@ -16,7 +16,7 @@ Supplementary Data
 │   │   │   ├── EchoCherryPicking.xlsx
 │   │   │   ├── Results_1.csv
 │   │   │   ├── Round_1_fluorescence_kinetics.xlsx
-│   │   │   ├── Round_1_meYFP_concentration.xlsx
+│   │   │   ├── Round_1_mEYFP_concentration.xlsx
 │   │   │   └── Volumes_1.csv
 │   │   ├── Round_2
 │   │   │   ├── Beta-Gal
@@ -28,19 +28,18 @@ Supplementary Data
 │   │   │   ├── Results_PURE_Exploration_Round_2.xlsx
 │   │   │   ├── Round_2_absorbance_kinetics.xlsx
 │   │   │   ├── Round_2_fluorescence_kinetics.xlsx
-│   │   │   ├── Round_2_meYFP_concentration.xlsx
+│   │   │   ├── Round_2_mEYFP_concentration.xlsx
 │   │   │   └── Volumes_2.csv
 │   │   ├── All_Batch#1_0.1nM_kinetic_parameters.csv
 │   │   └── All_Results_Batch#1_0.1nM_yield+rate_merged.csv
 │   ├── Figure_3
 │   │   ├── Round_6
 │   │   │   ├── 20241113_Echo_Cherry_Picking.csv
-│   │   │   ├── 20241114_Pretreated_Results_meYFP_concentration.xlsx
 │   │   │   ├── 20_Most_Informative_Combinations_Rank1.csv
 │   │   │   ├── Concentrations_6_Custom.csv
 │   │   │   ├── Results_6.csv
 │   │   │   ├── Round_6_fluorescence_kinetics.xlsx
-│   │   │   ├── Round_6_meYFP_concentration.xlsx
+│   │   │   ├── Round_6_mEYFP_concentration.xlsx
 │   │   │   ├── Round_6_results.csv
 │   │   │   ├── Round_6_statistics_summary.xlsx
 │   │   │   └── Volumes_6.csv
@@ -50,7 +49,7 @@ Supplementary Data
 │   │   │   ├── Results_7.csv
 │   │   │   ├── Round_7_fluorescence_kinetics.xlsx
 │   │   │   ├── Round_7_kinetic_parameters.csv
-│   │   │   ├── Round_7_meYFP_concentration.xlsx
+│   │   │   ├── Round_7_mEYFP_concentration.xlsx
 │   │   │   ├── Round_7_statistics_summary.xlsx
 │   │   │   └── Volumes_7.csv
 │   │   ├── Round_8
@@ -59,7 +58,7 @@ Supplementary Data
 │   │   │   ├── Results_8.csv
 │   │   │   ├── Round_8_fluorescence_kinetics.xlsx
 │   │   │   ├── Round_8_kinetic_parameters.csv
-│   │   │   ├── Round_8_meYFP_concentration.xlsx
+│   │   │   ├── Round_8_mEYFP_concentration.xlsx
 │   │   │   ├── Round_8_statistics_summary.xlsx
 │   │   │   └── Volumes_8.csv
 │   │   ├── All_Batch#2_2nM_kinetic_parameters.csv
@@ -98,8 +97,19 @@ Supplementary Data
 │   │   │   └── Manual_Assembly_3
 │   │   │       ├── ePURE4(Top_Round_8)_fluorescence_0.1nM.xlsx
 │   │   │       └── ePURE4(Top_Round_8)_fluorescence_2nM.xlsx
+│   │   ├── Pre-assembled
+│   │   │   ├── 0.1 nM
+│   │   │   │   ├── Pre-Assembled_ePURE_kinetics_0.1nM.xlsx
+│   │   │   │   ├── results.csv
+│   │   │   │   ├── statistics_summary.xlsx
+│   │   │   │   └── t_test_results_0.1nM.csv
+│   │   │   └── 2 nM
+│   │   │       ├── Pre-Assembled_ePURE_kinetics_2nM.xlsx
+│   │   │       ├── results.csv
+│   │   │       ├── statistics_summary.xlsx
+│   │   │       └── t_test_results_2nM.csv
 │   │   ├── ePURE.csv
-│   │   ├── resultsAll.csv
+│   │   ├── resultsAll_manual_assembly.csv
 │   │   └── t_test_results.csv
 │   ├── Figure_S1
 │   │   ├── Kinetic_Parameters.xlsx
@@ -117,7 +127,7 @@ Supplementary Data
 │   │   │   ├── Results_3.csv
 │   │   │   ├── Round_3_Echo_Cherry_Picking.csv
 │   │   │   ├── Round_3_fluorescence_kinetics.xlsx
-│   │   │   ├── Round_3_meYFP_concentration.xlsx
+│   │   │   ├── Round_3_mEYFP_concentration.xlsx
 │   │   │   ├── Round_3_Results_PURE_Exploration.xlsx
 │   │   │   ├── statistics_summary.xlsx
 │   │   │   └── Volumes_3.csv
@@ -125,7 +135,7 @@ Supplementary Data
 │   │   │   ├── Results_3bis.csv
 │   │   │   ├── Round_3_bis_fluorescence_kinetics.xlsx
 │   │   │   ├── Round_3_bis_Kinetic_parameters.csv
-│   │   │   ├── Round_3_bis_meYFP_concentration.xlsx
+│   │   │   ├── Round_3_bis_mEYFP_concentration.xlsx
 │   │   │   └── Round_3_bis_statistics_summary.xlsx
 │   │   ├── Round 4
 │   │   │   ├── Concentrations_4.csv
@@ -133,7 +143,7 @@ Supplementary Data
 │   │   │   ├── Results_4.csv
 │   │   │   ├── Round_4_EchoCherryPicking.csv
 │   │   │   ├── Round_4_fluorescence_kinetics.xlsx
-│   │   │   ├── Round_4_meYFP_concentration.xlsx
+│   │   │   ├── Round_4_mEYFP_concentration.xlsx
 │   │   │   ├── statistics_summary.xlsx
 │   │   │   └── Volumes_4.csv
 │   │   ├── Round 5
@@ -143,7 +153,7 @@ Supplementary Data
 │   │   │   ├── Round_5_Echo_Cherry_Picking.csv
 │   │   │   ├── Round_5_fluorescence_kinetics.xlsx
 │   │   │   ├── Round_5_Kinetic_parameters.csv
-│   │   │   ├── Round_5_meYFP_concentration.xlsx
+│   │   │   ├── Round_5_mEYFP_concentration.xlsx
 │   │   │   ├── Round_5_statistics_summary.xlsx
 │   │   │   └── Volumes_5.csv
 │   │   ├── All_Batch#2_0.1nM_kinetic_parameters.csv

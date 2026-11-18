@@ -18,12 +18,14 @@ Both pipelines share the same general workflow: load preprocessed plate-reader d
   - [Configuration](#fluorescence-configuration)
   - [Outputs](#fluorescence-outputs)
   - [Sigmoid model](#sigmoid-model)
+  - [Figure 4 notebook (pre-assembled ePURE)](#figure-4-notebook-pre-assembled-epure)
 - [Absorbance / CPRG Pipeline](#absorbance--cprg-pipeline)
   - [Biological context](#biological-context)
   - [Input format](#absorbance-input-format)
   - [Configuration](#absorbance-configuration)
   - [Outputs](#absorbance-outputs)
   - [Algorithm details](#algorithm-details)
+- [Concentration Conversion](#concentration-conversion)
 - [Shared conventions](#shared-conventions)
 - [Dependencies](#dependencies)
 
@@ -31,25 +33,29 @@ Both pipelines share the same general workflow: load preprocessed plate-reader d
 
 ## Fluorescence Pipeline
 
+Notebook: `Fluo_kinetics_script.ipynb`
+
 ### Fluorescence Input Format
 
 The script expects a **preprocessed** Excel file — raw plate reader exports must have instrument metadata, well identifiers, and empty rows removed beforehand.
 
 | Row / Column | Content |
 |--------------|---------|
-| Row 1        | Time points in hours (numeric) |
-| Column 1     | Replicate identifiers (e.g. `REF_A`, `Cond1_B`) |
+| Row 1        | Header row, ignored (empty in `Pretreated_Results` files) |
+| Row 2        | Time points in hours (numeric) |
+| Column 1     | Replicate identifiers (e.g. `REFA`, `Cond1B`) |
 | Remaining cells | Fluorescence values (RFU) over time |
 
-Replicates follow the pattern `ConditionName_X` where `X` is a letter suffix (A–E). The script automatically groups them by stripping the suffix.
+Replicates follow the pattern `ConditionNameX`, where `X` is a single letter suffix (A–E) with no separator. The script groups them by stripping the last character (`REF_A` would be grouped as `REF_`).
 
 **Example:**
 
-| Condition | 0 | 0.25 | 0.5 | 0.75 | 1 |
+| | | | | | |
 |-----------|---|------|-----|------|---|
-| REF_A | 150 | 220 | 340 | 450 | 600 |
-| REF_B | 140 | 210 | 330 | 440 | 590 |
-| Cond1_A | 120 | 200 | 310 | 430 | 620 |
+| | 0 | 0.25 | 0.5 | 0.75 | 1 |
+| REFA | 150 | 220 | 340 | 450 | 600 |
+| REFB | 140 | 210 | 330 | 440 | 590 |
+| Cond1A | 120 | 200 | 310 | 430 | 620 |
 
 ### Fluorescence Configuration
 
@@ -80,19 +86,20 @@ Day_X_kinetic_plots/
 │
 ├── statistics_summary.xlsx            # Per-condition variability at final time point
 ├── results.csv                         # Sigmoid fit parameters + relative yields
-└── all_mean_curve_plot.png / .svg      # Global overlay (color-coded by yield)
+└── all_mean_and_com_curve_plot_.png / .svg   # Global overlay (color-coded by yield)
 ```
 
 **`results.csv` columns:**
 
 | Column | Description |
 |--------|-------------|
-| `k′` | Sigmoid basal offset |
-| `Yield (k)` | Sigmoid amplitude (max fluorescence increase above baseline) |
+| `Cond.` | Replicate identifier |
+| `k_prime` | Sigmoid basal offset |
+| `Yield` | Sigmoid amplitude (max fluorescence increase above baseline) |
 | `K` | Half-maximal time |
 | `n` | Hill coefficient |
-| `Plateau Time` | Estimated time to steady state: `(2K/n) + K` |
-| `Translation Rate` | Apparent rate proxy: `(k·n) / (4K)` |
+| `Plateau_Time` | Estimated time to steady state: `(2K/n) + K` |
+| `Translation_Rate` | Apparent rate proxy: `(k·n) / (4K)` |
 | `Rel. Yield` | Yield relative to REF (sliding window method) |
 
 ### Sigmoid Model
@@ -106,6 +113,20 @@ y = k' + (k · t^n) / (t^n + K^n)
 > Based on [Stögbauer et al., *Mol. Syst. Biol.*, 2009](https://doi.org/10.1038/msb.2009.50) and [Doerr et al., *Phys. Biol.*, 2019](https://doi.org/10.1088/1478-3975/aaf33d).
 
 A **manual refit tool** is available (separate script section) for replicates where automatic fitting failed. It reloads the data, prompts for replicate names, and appends results to the existing `results.csv` without overwriting.
+
+### Figure 4 Notebook (Pre-assembled ePURE)
+
+`Fluo_kinetics_script_ePURE.ipynb` is the same pipeline with three extra cells, written for the GeneFrontier pre-assembled ePURE3/ePURE4 kinetics (Figure 4H, L). Run it once per DNA concentration on `Supplementary Data/meYFP_optimization/Figure_4/Pre-assembled/<0.1 nM | 2 nM>/Pre-Assembled_ePURE_kinetics_<conc>.xlsx`. There is no REF in this experiment: values are normalized to COM (`relative_yield_choice = "COM"`).
+
+The resulting `results.csv` feeds `visualization/yield_rate/Pre_Assembled_Yield_Rate_Plateau_Bars.py` (Figure 4I–K, M–O: bar charts and Welch's t-tests vs COM).
+
+| Cell | Output |
+|------|--------|
+| Mean ± SD comparison | One mean curve per condition with shaded ± SD band (`all_conditions_mean_SD.png/.svg`) |
+| Article names | Same plot, legend relabelled `P-A5` → ePURE3, `P-A8` → ePURE4 (`..._article_names.png/.svg`) |
+| Concentration axis | Same plot, y-axis converted to mEYFP µg/mL using the `meYFP_Convert.py` calibration (`..._concentration.png/.svg`) |
+
+Band type can be switched to SEM with `ERROR_BAND = "SEM"`.
 
 ---
 
@@ -188,11 +209,17 @@ Values > 1 indicate higher β-Gal yield than REF.
 
 ---
 
+## Concentration Conversion
+
+Scripts converting maximum fluorescence (RFU) to protein concentration (nM, µg/mL) for mEYFP, mVenus and mCherry, using calibration curves from purified standards (Figure S11). See [`concentration_conversion/README.md`](concentration_conversion/README.md).
+
+---
+
 ## Shared Conventions
 
 - **Relative yield** is always computed with a **sliding window average** over the fluorescence or absorbance curve to reduce noise at the plateau.
 - **Figure scaling** uses `set_scaled_rcparams` from `utils/figure_utils.py`. Update `sys.path.append(...)` in each script to point to your local `utils/` folder.
-- Figures are saved as `.png` (600 dpi), `.svg`, and `.pdf`.
+- Fluorescence figures are saved as `.png` (300 dpi); overlay plots are also saved as `.svg`. Sigmoid fit and correlation plots use the matplotlib default resolution.
 
 ---
 

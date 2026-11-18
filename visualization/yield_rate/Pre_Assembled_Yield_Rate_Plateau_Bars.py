@@ -1,6 +1,6 @@
 """
-PA_Yield_Rate_Plateau_Bars.py
-=============================
+Pre_Assembled_Yield_Rate_Plateau_Bars.py
+========================================
 Bar-chart comparison of the pre-assembled ("P-A") ePURE variants, using the
 sigmoid-fit results produced by the fluorescence-kinetics notebook
 (``Fluo_kinetics_script_ePURE.ipynb`` -> ``results.csv``).

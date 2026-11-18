@@ -14,11 +14,11 @@ Each `Round_X/` folder contains:
 - `Concentrations_X.csv`, `Volumes_X.csv` — METIS-generated conditions and Echo transfer volumes
 - `Results_X.csv` — conditions + measured relative yield (fed back into METIS)
 - `Round_X_fluorescence_kinetics.xlsx` — raw mEYFP fluorescence time-course
-- `Round_X_meYFP_concentration.xlsx` — converted to µg/mL using the Fig. S11 calibration
+- `Round_X_mEYFP_concentration.xlsx` — converted to µg/mL using the Fig. S11 calibration
 - `Kinetic_parameters.csv` / `statistics_summary.xlsx` — fitted yield/rate and replicate statistics
 - `*_Echo_Cherry_Picking.csv` (where present) — most-informative prior conditions re-tested this round
 
-Round_2 additionally has a `Beta-Gal/` subfolder with the lacZ/β-galactosidase CPRG-conversion data behind Fig. 2E and Fig. S2 (see top-level README, known issue #3, regarding whether this should also exist for rounds 0–1).
+Round_2 additionally has a `Beta-Gal/` subfolder with the lacZ/β-galactosidase CPRG-conversion data behind Fig. 2E and Fig. S2.
 
 Per-round files for each campaign are concatenated into a single merged dataset used for the ML/kymograph/MDS panels:
 - Fig. 2 → `Figure_2/All_Batch#1_0.1nM_kinetic_parameters.csv`, `Figure_2/All_Results_Batch#1_0.1nM_yield+rate_merged.csv`
@@ -39,7 +39,14 @@ These same merged files also feed the derived supplementary panels (no separate 
 | `ePURE3/` | ePURE3, REF, COM | Round 5 | Batch#2 |
 | `ePURE4/` | ePURE4, REF, COM | Round 8 | Batch#2 |
 
-Each has up to three `Manual_Assembly_N/` replicate-day folders. The top-level `ePURE.csv`, `resultsAll.csv`, and `t_test_results.csv` hold the compiled comparison and Welch's t-test results plotted in Fig. 4B–G.
+Each has up to three `Manual_Assembly_N/` replicate-day folders. The top-level `ePURE.csv`, `resultsAll_manual_assembly.csv`, and `t_test_results.csv` hold the compiled comparison and Welch's t-test results plotted in Fig. 4B–G. `resultsAll_manual_assembly.csv` also contains pilot pre-assembled rows (`P-A5`, `P-A8`, n = 1–2), excluded from the analysis as described in Methods.
+
+### Pre-assembled ePURE (Fig. 4H–O)
+
+`Pre-assembled/0.1 nM/` and `Pre-assembled/2 nM/`: ePURE3 (`P-A5`) and ePURE4 (`P-A8`) supplied by GeneFrontier as pre-assembled Solutions I–III, benchmarked against COM (n = 3, same day). Each folder contains:
+- `Pre-Assembled_ePURE_kinetics_<conc>.xlsx` — raw mEYFP fluorescence time-course
+- `results.csv`, `statistics_summary.xlsx` — sigmoid fit parameters (normalized to COM) and replicate statistics
+- `t_test_results_<conc>.csv` — Welch's t-tests vs. COM for yield, translation rate and time to plateau
 
 ## Other figures
 

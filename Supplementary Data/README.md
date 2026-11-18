@@ -1,4 +1,4 @@
-# Data Repository — Optimization of PURE system composition using automation and active learning
+# Data Repository — Exploration of PURE compositions using automation and active learning reveals context-dependent performance
 
 Bernard-Lapeyre, Cleij, Sakai, Huguet, Danelon
 
@@ -16,7 +16,7 @@ Each subfolder has its own README with campaign-specific detail. This file cover
 | Fig. 1 | — | Workflow schematic, no underlying data file |
 | Fig. 2 | `meYFP_optimization/Figure_2` | Rounds 0–2, Batch#1, 0.1 nM meyfp / 10 pM lacZ |
 | Fig. 3 | `meYFP_optimization/Figure_3` | Rounds 6–8, Batch#2, 2 nM meyfp |
-| Fig. 4 | `meYFP_optimization/Figure_4` | Manual-assembly validation of ePURE1–4 / badPURE |
+| Fig. 4 | `meYFP_optimization/Figure_4` | Manual-assembly validation of ePURE1–4 / badPURE (B–G); GeneFrontier pre-assembled ePURE3/ePURE4 vs. COM (H–O) |
 | Fig. S1 | `meYFP_optimization/Figure_S1` | Echo vs. manual REF vs. commercial COM kit |
 | Fig. S2 | `meYFP_optimization/Figure_2` (`Round_2/Beta-Gal`) | lacZ / β-galactosidase relative yields (CPRG assay), Rounds 0–2, Batch#1 |
 | Fig. S3 | — (derived) | XGBoost CV performance + feature importance, Batch#1 0.1 nM — computed from Fig. 2 merged data |
@@ -46,7 +46,7 @@ Note: Fig. S11 appears twice — once per campaign (meYFP calibration and MSG1.1
 | `Volumes_X.csv` | Echo-compatible transfer volumes derived from `Concentrations_X.csv` |
 | `Results_X.csv` | `Concentrations_X.csv` + measured relative yield (the file METIS learns from) |
 | `Round_X_fluorescence_kinetics.xlsx` | Raw mEYFP/mVenus/mCherry fluorescence time-course for round X |
-| `Round_X_meYFP_concentration.xlsx` / `*_concentration.xlsx` | Fluorescence converted to µg/mL using the calibration curve (Fig. S11) |
+| `Round_X_mEYFP_concentration.xlsx` / `*_concentration.xlsx` | Fluorescence converted to µg/mL using the calibration curve (Fig. S11) |
 | `Round_X_absorbance_kinetics.xlsx` | CPRG→CPR absorbance time-course (lacZ / β-gal assay) |
 | `Kinetic_parameters.csv` / `*_kinetic_parameters.csv` | Fitted yield + apparent translation rate per condition |
 | `statistics_summary.xlsx` | Mean, SD, CV% across technical replicates |

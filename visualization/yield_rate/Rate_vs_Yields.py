@@ -12,7 +12,7 @@ The final figure is exported as both a PDF and an SVG.
 Dependencies
 ------------
 pandas, matplotlib, numpy, tkinter  (all standard in a scientific Python stack)
-figure_utils  (internal helper, expected at U:\Thèse\Python\figure_utils.py)
+figure_utils  (internal helper, see utils/figure_utils.py)
 """
 
 
@@ -48,9 +48,9 @@ font_family, scale, marker_size, marker_edge_width, labelpad, tight_pad = set_sc
 
 # Several CSV paths are commented out; uncomment the desired dataset before running
 
-#file_path = "\Old Batch.csv" #--> Round 0-2
-#file_path = "\NewBatch.csv" #--> Round 3-5
-file_path = "\2nM.csv" #--> Round 6-8
+#file_path = r"Old Batch.csv" #--> Round 0-2
+#file_path = r"NewBatch.csv" #--> Round 3-5
+file_path = r"2nM.csv" #--> Round 6-8
 
 data = pd.read_csv(file_path)
 

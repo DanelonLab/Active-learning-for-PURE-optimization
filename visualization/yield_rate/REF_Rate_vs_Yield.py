@@ -14,8 +14,8 @@ font_family, scale, marker_size, marker_edge_width, labelpad, tight_pad = set_sc
 )
 
 # === USER CONFIG ===
-params_file = r"u:\Thèse\Data\Data analysis\Echo PURE\REF Analysis\REF Fluo\REF_Curvefit_Output\Kinetic_Parameters_Prot_Conc.xlsx"
-output_dir = r"u:\Thèse\Data\Data analysis\Echo PURE\REF Analysis\REF Fluo\Parameter_Plots_Prot_Conc"
+params_file = r"Kinetic_Parameters_Prot_Conc.xlsx"
+output_dir = r"Parameter_Plots_Prot_Conc"
 os.makedirs(output_dir, exist_ok=True)
 
 
