@@ -23,10 +23,8 @@ Supplementary Data
 │   │   │   │   ├── relative_slope_scores.xlsx
 │   │   │   │   └── Round_2_CPRG_kinetics.xlsx
 │   │   │   ├── Concentrations_2.csv
-│   │   │   ├── relative_slope_scores.xlsx
 │   │   │   ├── Results_2.csv
 │   │   │   ├── Results_PURE_Exploration_Round_2.xlsx
-│   │   │   ├── Round_2_absorbance_kinetics.xlsx
 │   │   │   ├── Round_2_fluorescence_kinetics.xlsx
 │   │   │   ├── Round_2_mEYFP_concentration.xlsx
 │   │   │   └── Volumes_2.csv
@@ -186,11 +184,7 @@ Supplementary Data
 │   │   │   │   └── Volumes_1_1nM.csv
 │   │   │   ├── Concentrations_1_all.csv
 │   │   │   ├── Relative_Yields_Comparison.xlsx
-│   │   │   ├── Results_1_0.1nM.csv
-│   │   │   ├── Results_1_1nM.csv
-│   │   │   ├── Round_1_Echo_Cherry_Picking.csv
-│   │   │   ├── Volumes_1_0.1nM.csv
-│   │   │   └── Volumes_1_1nM.csv
+│   │   │   └── Round_1_Echo_Cherry_Picking.csv
 │   │   ├── Round_2
 │   │   │   ├── 0.1 nM
 │   │   │   │   ├── mCherry

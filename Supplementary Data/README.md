@@ -47,7 +47,7 @@ Note: Fig. S11 appears twice — once per campaign (meYFP calibration and MSG1.1
 | `Results_X.csv` | `Concentrations_X.csv` + measured relative yield (the file METIS learns from) |
 | `Round_X_fluorescence_kinetics.xlsx` | Raw mEYFP/mVenus/mCherry fluorescence time-course for round X |
 | `Round_X_mEYFP_concentration.xlsx` / `*_concentration.xlsx` | Fluorescence converted to µg/mL using the calibration curve (Fig. S11) |
-| `Round_X_absorbance_kinetics.xlsx` | CPRG→CPR absorbance time-course (lacZ / β-gal assay) |
+| `Round_X_CPRG_kinetics.xlsx` / `relative_slope_scores.xlsx` | CPRG→CPR absorbance time-course and relative slopes (lacZ / β-gal assay), in `Beta-Gal/` |
 | `Kinetic_parameters.csv` / `*_kinetic_parameters.csv` | Fitted yield + apparent translation rate per condition |
 | `statistics_summary.xlsx` | Mean, SD, CV% across technical replicates |
 | `*Echo_Cherry_Picking.csv` | List of "most informative" prior conditions re-tested in a later round |
