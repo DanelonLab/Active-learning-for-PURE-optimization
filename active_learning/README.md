@@ -8,7 +8,7 @@ This folder contains the four Google Colab notebooks used to run the iterative P
 
 | Notebook | Template | DNA concentration | Rounds | Description |
 |---|---|---|---|---|
-| `PURE_Exploration_0_1nM_METIS_TBI.ipynb` | *meyfp* | 0.1 nM | 0–5 | First METIS campaign (Batch#1). Initial random exploration + 2 active learning rounds. |
+| `PURE_Exploration_0_1nM_METIS_TBI.ipynb` | *meyfp* | 0.1 nM | 0–5 | First METIS campaign: Batch#1 (rounds 0–2), Batch#2 (rounds 3, 3 bis, 4, 5). Initial random exploration + active learning rounds. |
 | `PURE_Exploration_2nM_TBI.ipynb` | *meyfp* | 2 nM | 6–8 | High-DNA campaign (Batch#2). Improved predictability, distinct limiting factors. |
 | `PURE_Exploration_MSG1_1.ipynb` | MSG1.1 (41 kb) | 0.1 nM & 1 nM | 1–5 | Multicistronic synthetic chromosome. Multi-objective optimization using harmonic mean of mVenus + mCherry. |
 | `PURE_Exploration_MSG1_1_C_change.ipynb` | MSG1.1 (41 kb) | 0.1 nM & 1 nM | 6–8 | Continuation of MSG1.1 campaign with **expanded concentration ranges** (rounds 6–8). Updated component grids allow exploration beyond the initial ×0.5–×2 window. |
@@ -40,6 +40,8 @@ drive.mount('/content/drive')
 5. **Visualization** — Boxplots, metabolite scatter plots, and feature importance figures.
 
 ### File naming convention
+
+Component columns use the manuscript Table 1 names, the same ones as the data in [`Supplementary Data/`](../Supplementary%20Data), so a `Results_X.csv` from there can be loaded without renaming.
 
 | File | Description |
 |---|---|

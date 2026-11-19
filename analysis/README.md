@@ -98,4 +98,4 @@ COND1, 1.45, 0.18, 1, 2.0, 6.0, 1.0, 2.5, ...
 - `yield`: float, relative to REF (REF = 1.0)
 - `rate`: optional float (normalized translation rate)
 - `Day`: optional integer (experimental round)
-- All other columns: component concentrations (float, nM)
+- All other columns: component concentrations (float, vol %)
