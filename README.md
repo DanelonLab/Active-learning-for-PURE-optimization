@@ -1,6 +1,6 @@
 # PURE System Optimization Using Automation and Active Learning
 
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 This repository contains all analysis scripts and active learning notebooks associated with the following manuscript published in _ACS Synthetic Biology_:
@@ -113,10 +113,12 @@ All scripts in `analysis/` and `visualization/` run locally. Update the file pat
 
 | DNA Concentration | Template | Batches | Rounds | Conditions |
 |---|---|---|---|---|
-| 0.1 nM | *meyfp* | Batch#1, Batch#2 | 0–5 | ~170 |
-| 2 nM | *meyfp* | Batch#2 | 6–8 | ~156 |
-| 0.1 nM | MSG1.1 (41 kb) | — | 1–8 | ~238 |
-| 1 nM | MSG1.1 (41 kb) | — | 1–8 | ~237 |
+| 0.1 nM | *meyfp* | Batch#1, Batch#2 | 0–5 | 181 (73 + 108) |
+| 2 nM | *meyfp* | Batch#2 | 6–8 | 133 |
+| 0.1 nM | MSG1.1 (41 kb) | — | 1–8 | 238 |
+| 1 nM | MSG1.1 (41 kb) | — | 1–8 | 237 |
+
+Conditions = unique compositions after QC (CV < 33%) and merging, REF included (e.g. 2 nM: 156 tested → 133).
 
 ---
 
@@ -160,7 +162,7 @@ Raw fluorescence kinetics, PURE component concentration files, and Results CSVs 
 The expected input format for most analysis scripts is a CSV with:
 - A `Condition` column (string label; must include a `REF` row)
 - A `yield` column (float, relative to REF)
-- One column per PURE component (float, concentration in nM or relative units)
+- One column per PURE component (float, vol %)
 
 ---
 
