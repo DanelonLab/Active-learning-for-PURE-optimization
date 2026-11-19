@@ -3,7 +3,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-This repository contains all analysis scripts and active learning notebooks associated with the manuscript:
+This repository contains all analysis scripts and active learning notebooks associated with the following manuscript published in _ACS Synthetic Biology_:
 
 > **Exploration of PURE compositions using automation and active learning reveals context-dependent performance**  
 > Yannick Bernard-Lapeyre, Céline Cleij, Andrei Sakai, Marie-José Huguet, Christophe Danelon  
