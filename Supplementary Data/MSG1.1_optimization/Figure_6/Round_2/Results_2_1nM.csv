@@ -1,4 +1,4 @@
-Condition,hepes,k-glut,mg-acet,gsh,spermidine,fthf,cp,aa18,tyr,cys,atp-gtp,ctp-utp,tRNA,aaRS-mtf,IFs,EFs,RFs,t7pol,ndk-mk-ck-ppiase,factors,ribosomes,DNA,yield
+Condition,hepes,k-glut,mg-acet,gsh,spermidine,fthf,cp,aa18,tyr,cys,atp-gtp,ctp-utp,tRNAs,aaRSs-mtf,IFs,EFs,RFs,t7pol,ndk-mk-ck-ppiase,factors,ribosomes,DNA,yield
 50,2,3,1,2.5,0.1,1,2,5,4,2,3,2,7,0.4,0.4,2,0.05,0.05,0.1,0.05,3.33,0.1,0.51370329
 51,2,3,1,2.5,0.1,0.5,4,20,4,2,3,2,7,0.4,0.4,1,0.05,0.05,0.2,0.05,3.33,0.1,0.281686922
 53,2,6,1,2.5,0.2,0.5,2,20,2,1,3,1,3.5,0.4,0.2,2,0.05,0.1,0.05,0.05,3.33,0.1,0.539041727

@@ -1,6 +1,6 @@
 # MSG1.1 optimization — multicistronic chromosome campaign
 
-Covers Figures 5–8 and the second instance of Fig. S11. MSG1.1 is a 41-kb synthetic chromosome (15 genes); optimization is guided by the harmonic mean of mVenus and mCherry relative yields, at two DNA concentrations (0.1 nM and 1 nM), each run for 9 rounds.
+Covers Figures 5–8 and the second instance of Fig. S11. MSG1.1 is a 41-kb synthetic chromosome (15 genes); optimization is guided by the harmonic mean of mVenus and mCherry relative yields, at two DNA concentrations (0.1 nM and 1 nM), each run for 8 optimization rounds plus a 9th round re-testing the top conditions.
 
 ## Folder layout (per round)
 
@@ -12,7 +12,7 @@ Each `Round_X/` splits into `0.1 nM/` and `1 nM/`, each containing:
 
 Seeding: rounds 3–5 of the meYFP campaign (Batch#2, 0.1 nM; Fig. S4) seeded MSG1.1 Round 1 at 0.1 nM. Rounds 6–8 of the meYFP campaign (Batch#2, 2 nM; Fig. 3) seeded MSG1.1 Round 1 at 1 nM (manuscript Fig. 6A,B legend) through METIS' "Find K Most Informative Combinations" module.
 
-Merged datasets across all 9 rounds (used for Figs. 6G–M, 7, S8–S10):
+Merged datasets across rounds 1–8 (used for Figs. 6G–M, 7, S8–S10):
 - `Figure_6/All_Results_MSG1_0.1nM_merged.csv`
 - `Figure_6/All_Results_MSG1_1nM_merged.csv`
 

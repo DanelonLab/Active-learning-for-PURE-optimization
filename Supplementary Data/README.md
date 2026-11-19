@@ -42,7 +42,7 @@ Note: Fig. S11 appears twice — once per campaign (meYFP calibration and MSG1.1
 
 | File pattern | Meaning |
 |---|---|
-| `Concentrations_X.csv` | METIS-generated table of component concentrations (relative to REF) tested in round X |
+| `Concentrations_X.csv` | METIS-generated table of component concentrations (vol %) tested in round X; levels are multiples of REF (e.g. 0.5×, 1×, 2×) |
 | `Volumes_X.csv` | Echo-compatible transfer volumes derived from `Concentrations_X.csv` |
 | `Results_X.csv` | `Concentrations_X.csv` + measured relative yield (the file METIS learns from) |
 | `Round_X_fluorescence_kinetics.xlsx` | Raw mEYFP/mVenus/mCherry fluorescence time-course for round X |
@@ -57,7 +57,9 @@ Note: Fig. S11 appears twice — once per campaign (meYFP calibration and MSG1.1
 
 ## Component abbreviations (manuscript Table 1)
 
-`hepes, k-glut, mg-acet, gsh, spermidine, fthf, cp, aa18, tyr, cys, atp-gtp, ctp-utp, tRNAs, aaRSs-mtf, IFs, EFs, RFs, t7pol, ndk-mk-ck-ppiase, factors, ribosomes` — these are the column headers in every `Concentrations_X.csv` / `Volumes_X.csv` file. Full names and functional grouping are in manuscript Table 1.
+`hepes, k-glut, mg-acet, gsh, spermidine, fthf, cp, aa18, tyr, cys, atp-gtp, ctp-utp, tRNAs, aaRSs-mtf, IFs, EFs, RFs, t7pol, ndk-mk-ck-ppiase, factors, ribosomes` — these are the column headers in every `Concentrations_X.csv`, `Volumes_X.csv` and `Results_X.csv` file. Full names and functional grouping are in manuscript Table 1.
+
+The same names are used throughout the repository — data files, METIS notebooks, analysis and visualization scripts — so any `Results_X.csv` here can be fed straight back into the notebook that produced it. Earlier versions of the METIS notebooks used `aa1`, `aa2`, `aa3`, `tRNA` and `aaRS-mtf` for `aa18`, `tyr`, `cys`, `tRNAs` and `aaRSs-mtf`; those names no longer appear in the repository.
 
 ## Batch / DNA-concentration legend
 
